@@ -60,8 +60,6 @@ minetest.register_node("bamboo:bamboo", {
 			is_growable = false
 		end
 		
-		print("node_below", node_below.name, "is_growable", is_growable, "is_sand", is_sand, "is_soil", is_soil)
-		
 		-- If we're not in a suitable location, then uproot
 		if not is_growable then
 			minetest.dig_node(pos)
@@ -88,7 +86,6 @@ minetest.register_abm({
 	action = function (pos, node, active_object_count, active_object_count_wider)
 		local pos_new = { x = pos.x, y = pos.y + 1, z = pos.z }
 		local node_next = minetest.get_node(pos_new)
-		minetest.log("Bamboo ABM called, node above:"..node.name)
 		if node_next.name ~= "air" or node.param2 > 24 then
 			return
 		end
