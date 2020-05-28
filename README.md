@@ -4,7 +4,7 @@
 
 This mod adds a simple fast-growing bamboo plant to Minetest.
 
- - It grows up to ~24 blocks tall, or as low as 4 blocks tall
+ - It grows up to 25 blocks tall, or as low as 4 blocks tall
  - Every 45 seconds it has a 1 in 4 chance of of growing
  - It requires an air node above it in order to grow
  - Breaking a lower node in the plant causes all the upper ones to break too

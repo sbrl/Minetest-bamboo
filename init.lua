@@ -30,7 +30,7 @@ minetest.register_node("bamboo:bamboo", {
 		-- Randomly set param2 to vary the eventual height it grows to, but only if it hasn't been set already
 		local node = minetest.get_node(pos)
 		if node.param2 == 0 then
-			node.param2 = math.random(0, 20)
+			node.param2 = math.random(0, 21)
 			minetest.set_node(pos, node)
 		end
 	end
