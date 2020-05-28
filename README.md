@@ -10,6 +10,8 @@ This mod adds a simple fast-growing bamboo plant to Minetest.
  - Breaking a lower node in the plant causes all the upper ones to break too
  - It can be used as a fuel source, but it's pretty terrible :P
 
+Currently, it doesn't yet spawn in the world (but this is a planned feature, I just haven't done the research on how this is possible yet)
+
 
 ## Getting started
 Install it by cloning this repository into your world's `worldmods` folder:
