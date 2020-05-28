@@ -7,6 +7,8 @@ This mod adds a simple fast-growing bamboo plant to Minetest.
  - It grows up to 25 blocks tall, or as low as 4 blocks tall
  - Every 45 seconds it has a 1 in 4 chance of of growing
  - It requires an air node above it in order to grow
+ - It can be placed on soil or sand, but not if it's wet or dark (below light level 8)s
+ - It can't be placed with water directly next to it (i.e. on the same level) either
  - Breaking a lower node in the plant causes all the upper ones to break too
  - It can be used as a fuel source, but it's pretty terrible :P
 
