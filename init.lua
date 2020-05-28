@@ -30,7 +30,7 @@ minetest.register_node("bamboo:bamboo", {
 		-- Randomly set param2 to vary the eventual height it grows to, but only if it hasn't been set already
 		local node = minetest.get_node(pos)
 		if node.param2 == 0 then
-			node.param2 = math.random(0, 10)
+			node.param2 = math.random(0, 20)
 			minetest.set_node(pos, node)
 		end
 	end
@@ -52,4 +52,10 @@ minetest.register_abm({
 		end
 		minetest.set_node(pos_new, { name = "bamboo:bamboo", param2 = node.param2 + 1 })
 	end
+})
+
+minetest.register_craft({
+	type = "fuel",
+	recipe = "bamboo:bamboo",
+	burntime = 1
 })
