@@ -1,4 +1,4 @@
-minetest.register_node("bamboo:bamboo", {
+minetest.register_node("sbrl_bamboo:bamboo", {
 	description = "Bamboo",
 	drawtype = "nodebox",
 	paramtype = "light",
@@ -14,12 +14,12 @@ minetest.register_node("bamboo:bamboo", {
 	-- TODO: Make it drop an item too, but unsure how to achieve that
 	floodable = true,
 	tiles = {
-		"bamboo_bamboo-top.png", -- top
-		"bamboo_bamboo-top.png", -- bottom
-		"bamboo_bamboo-side.png",-- left
-		"bamboo_bamboo-side.png",-- right
-		"bamboo_bamboo-side.png",-- front
-		"bamboo_bamboo-side.png"-- back
+		"sbrl_bamboo_bamboo-top.png", -- top
+		"sbrl_bamboo_bamboo-top.png", -- bottom
+		"sbrl_bamboo_bamboo-side.png",-- left
+		"sbrl_bamboo_bamboo-side.png",-- right
+		"sbrl_bamboo_bamboo-side.png",-- front
+		"sbrl_bamboo_bamboo-side.png"-- back
 	},
 	node_box = {
 		type = "fixed",
@@ -75,8 +75,8 @@ minetest.register_node("bamboo:bamboo", {
 })
 
 minetest.register_abm({
-	label = "bamboo_growth",
-	nodenames = { "bamboo:bamboo" },
+	label = "sbrl_bamboo_growth",
+	nodenames = { "sbrl_bamboo:bamboo" },
 	neighbours = { "air" },
 	interval = 45,
 	chance = 4, -- 1 in 2
@@ -87,6 +87,6 @@ minetest.register_abm({
 		if node_next.name ~= "air" or node.param2 > 24 then
 			return
 		end
-		minetest.set_node(pos_new, { name = "bamboo:bamboo", param2 = node.param2 + 1 })
+		minetest.set_node(pos_new, { name = "sbrl_bamboo:bamboo", param2 = node.param2 + 1 })
 	end
 })

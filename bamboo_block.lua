@@ -1,9 +1,9 @@
-minetest.register_node("bamboo:bamboo_block", {
+minetest.register_node("sbrl_bamboo:bamboo_block", {
 	description = "Bamboo Block",
 	is_ground_content = false,
 	paramtype = "light",
 	paramtype2 = "facedir",
-	tiles = { "bamboo_block-dry.png" },
+	tiles = { "sbrl_bamboo_block-dry.png" },
 	groups = {
 		flammable = 3,
 		float = 3,
@@ -14,7 +14,7 @@ minetest.register_node("bamboo:bamboo_block", {
 })
 
 if minetest.get_modpath("default") then
-	minetest.override_item("bamboo:bamboo_block", {
+	minetest.override_item("sbrl_bamboo:bamboo_block", {
 		sounds = default.node_sound_wood_defaults()
 	})
 end

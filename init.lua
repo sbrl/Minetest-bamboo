@@ -5,10 +5,10 @@
 -- @license Mozilla Public License, 2.0
 -- @author Starbeamrainbowlabs
 
-bamboo = {
-	modpath = minetest.get_modpath("bamboo")
+sbrl_bamboo = {
+	modpath = minetest.get_modpath("sbrl_bamboo")
 }
 
-dofile(bamboo.modpath.."/bamboo_plant.lua");
-dofile(bamboo.modpath.."/bamboo_block.lua");
-dofile(bamboo.modpath.."/crafting.lua");
+dofile(sbrl_bamboo.modpath.."/bamboo_plant.lua");
+dofile(sbrl_bamboo.modpath.."/bamboo_block.lua");
+dofile(sbrl_bamboo.modpath.."/crafting.lua");

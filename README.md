@@ -1,4 +1,4 @@
-# Minetest-bamboo
+# `sbrl_bamboo`
 
 > A bamboo plant mod for Minetest
 
@@ -23,7 +23,7 @@ Install it by cloning this repository into your world's `worldmods` folder:
 
 ```bash
 cd path/to/world/worldmods;
-git clone https://github.com/sbrl/Minetest-bamboo.git bamboo
+git clone https://github.com/sbrl/Minetest-bamboo.git sbrl_bamboo
 ```
 
 Then, restart your Minetest server.
